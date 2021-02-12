@@ -1,0 +1,96 @@
+
+/* General */
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+#centro{
+  text-align: center;
+}
+.col h2{
+  text-align: center;
+}
+.col p{
+  margin-left: 15px;
+}
+#center{
+  margin-left: 50px;
+}
+#realidadVirtu{
+  display: flex;
+  flex-direction: row;
+}
+#realidadVirtu p {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+
+/* Cambios de las paginas propias de cada gafa */
+
+.img-izq{
+  display: flex;
+  flex-direction: row;
+}
+.img-izq p{
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.img-izq img{
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 15px;
+  border: solid;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+.wrapper-HTC-Oculus{
+  margin-bottom: 13%;
+}
+#aviso{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+footer a{
+  text-decoration: none;
+}
+
+/* Cambios segun el tamaño */
+
+@media (max-width: 900px) {
+  #realidadVirtu{
+    flex-direction: column;
+  }
+  .img-izq{
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px){
+  #aviso{
+    margin-left: 20%
+  }
+}
+@media (min-width: 700px) {
+  .img-izq{
+    flex-direction: column;
+  }
+  .img-izq img{
+    margin-left: 15px;
+  }
+  
+}
+@media(min-width: 1550px){
+  .carousel-item{
+    height: 95vh;
+  }
+  .img-izq{
+    flex-direction: row;
+  }
+}
+
+

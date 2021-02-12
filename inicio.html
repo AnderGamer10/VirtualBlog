@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Virtual Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Proyecto.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- El header con el navegador -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html">Virtual Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Gafas VR
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="gafas/Oculus.html">Oculus</a></li>
+                <li><a class="dropdown-item" href="gafas/HTC.html">HTC</a></li>
+                <li><a class="dropdown-item" href="gafas/GafasVr.html">Ver mas...</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Juegos VR
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="juegos/Inalambricos.html">Gafas inalambricas</a></li>
+                <li><a class="dropdown-item" href="juegos/conPC.html">Necesidad de PC</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Contactanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+
+  <!-- La foto de inicio con carrusel -->
+  <main>
+    <div id="carouselExampleCaptions" class="carousel slide h-50" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/gafas/Oculus-Quest-2.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Oculus Quest 2</h1>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagenes/gafas/HTC-CosmosSeries-cosmos.jpg" class="d-block w-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>HTC-CosmosSeries-cosmos</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="imagenes/gafas/PS VR.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>PS VR</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </a>
+      </div>
+  </main>
+
+  <!-- Un articulo -->
+  <div id="realidadVirtu">
+    <img height="400px" width="800px"
+      src="imagenes/gafas/imagenArti.jpg">
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure, quam possimus aut quod, praesentium
+        dignissimos repudiandae voluptate soluta suscipit illum laboriosam ducimus unde omnis sint rerum corrupti quidem
+        perferendis, porro neque! Non ullam aspernatur dolore minus earum quas maxime quo nemo. Optio architecto quidem
+        labore aut impedit perspiciatis et!</p>
+    </div>
+  </div>
+
+  <!-- Varias gafas de exposicion -->
+  <br>
+  <div class="card-header">
+    <h1 id="centro">Facebook</h1>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Oculus Quest</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at vitae libero, tempore amet
+          optio vel illum officia fugit ratione?</p>
+        <a href="gafas/oculus/oculusQ1.html" id="center" class="btn btn-dark">Saber mas...</a>
+      </div>
+      <div class="card">
+        <img height="500px" width="400px"
+          src="imagenes/gafas/oculusquest.jpg" class="card-img-top"
+          alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Oculus Quest 2</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at vitae libero, tempore amet
+          optio vel illum officia fugit ratione?</p>
+        <a href="gafas/oculus/oculusQ2.html" id="center" class="btn btn-dark">Saber mas...</a>
+      </div>
+      <div class="card">
+        <img height="500px" width="400px"
+          src="imagenes/gafas/Oculus-Quest-2.jpg" class="card-img-top"
+          alt="...">
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="card-header">
+    <h1 id="centro">HTC</h1>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="my-3 py-3">
+        <h2 class="display-5">HTC-CosmosSeries-cosmos</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at vitae libero, tempore amet
+          optio vel illum officia fugit ratione?</p>
+        <a href="gafas/HTC/HTC-Cosmos.html" id="center" class="btn btn-dark">Saber mas...</a>
+      </div>
+      <div class="card">
+        <img height="500px" width="400px" src="imagenes/gafas/HTC-CosmosSeries-cosmos.jpg"
+          class="card-img-top" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="my-3 py-3">
+        <h2 class="display-5">HTC-ProSeries-ProHMD</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at vitae libero, tempore amet
+          optio vel illum officia fugit ratione?</p>
+        <a href="gafas/HTC/HTC-ProSeries.html" id="center" class="btn btn-dark">Saber mas...</a>
+      </div>
+      <div class="card">
+        <img height="500px" width="400px" src="imagenes/gafas/HTC-ProSeries-ProHMD.jpeg" class="card-img-top"
+          alt="...">
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Texto para llevarte a catalogo -->
+  <div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">¿Quieres ver mas?</h5>
+      <p class="card-text">Ve a nuestro catalogo y mira mas informacion sobre todas las gafas disponibles</p>
+      <a href="gafas/GafasVr.html" class="btn btn-primary">Ir a Gafas VR</a>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+
+  <!-- El footer -->
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href=""> VirtualBlog.com</a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
